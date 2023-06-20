@@ -54,11 +54,18 @@ hamburger.addEventListener('click',function(){
     navMenu.classList.toggle('hidden');
 });
 
-
-//click
-window.addEvenListener('click', function (e){
-    if (e.target != hamburger && e.target !=navMenu){
-        hamburger.classList.remove('hamburger-active');
-        navMenu.classList.add('hidden');
-    }
-});
+//Send Message to Email
+function SendMail(){
+  var params = {
+    from_name : document.getElementById("name").value,
+    email_id : document.getElementById("email").value,
+    message : document.getElementById("message").value
+  }
+        emailjs.send("service_ioopzjo", "template_4kx0cvo", params).then(function (res) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Success!',
+          text: 'Your message has been sent successfully.'
+        });
+      });
+}
