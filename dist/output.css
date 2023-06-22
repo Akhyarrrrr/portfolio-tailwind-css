@@ -666,8 +666,8 @@ video {
   margin-right: 0.75rem;
 }
 
-.mt-0 {
-  margin-top: 0px;
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-10 {
@@ -831,6 +831,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-l-2 {
   border-left-width: 2px;
 }
@@ -841,6 +845,11 @@ video {
 
 .border-t-2 {
   border-top-width: 2px;
+}
+
+.border-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 23 42 / var(--tw-border-opacity));
 }
 
 .border-slate-300 {

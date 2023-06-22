@@ -21,7 +21,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 
 //job
 var typed= new Typed(".text", {
-    strings:["Frontend Developer", "Freelancer", "Gamer"],
+    strings:["Junior Web Developer", "Freelancer", "Gamer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
